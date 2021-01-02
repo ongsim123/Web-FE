@@ -1,275 +1,39 @@
-마크다운 문법(syntax)
-===
-제목(Header)
----
-<h1>부터 <h6>까지 제목을 표현할 수 있습니다.
+# VScode - Node.js Debugging
 
-# 제목 1
-## 제목 2
-### 제목 3
-#### 제목 4
-##### 제목 5
-###### 제목 6
-제목1(h1)과 제목2(h2)는 다음과 같이 표현할 수 있습니다.
-
-제목 1
-======
-
-제목 2
-------
-강조(Emphasis)
-각각 <em>, <strong>, <del> 태그로 변환됩니다.
-
-밑줄을 입력하고 싶다면 <u></u> 태그를 사용하세요.
-
-이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_를 사용하세요.
-두껍게는 **별표(asterisks)** 혹은 __언더바(underscore)__를 사용하세요.
-**_이텔릭체_와 두껍게**를 같이 사용할 수 있습니다.
-취소선은 ~~물결표시(tilde)~~를 사용하세요.
-<u>밑줄</u>은 `<u></u>`를 사용하세요.
-이텔릭체는 별표(asterisks) 혹은 언더바(underscore)를 사용하세요.
-두껍게는 별표(asterisks) 혹은 언더바(underscore)를 사용하세요.
-이텔릭체와 두껍게를 같이 사용할 수 있습니다.
-취소선은 물결표시(tilde)를 사용하세요.
-밑줄은 <u></u>를 사용하세요.
-
-목록(List)
-<ol>, <ul> 목록 태그로 변환됩니다.
-
-1. 순서가 필요한 목록
-1. 순서가 필요한 목록
-  - 순서가 필요하지 않은 목록(서브) 
-  - 순서가 필요하지 않은 목록(서브) 
-1. 순서가 필요한 목록
-  1. 순서가 필요한 목록(서브)
-  1. 순서가 필요한 목록(서브)
-1. 순서가 필요한 목록
-
-- 순서가 필요하지 않은 목록에 사용 가능한 기호
-  - 대쉬(hyphen)
-  * 별표(asterisks)
-  + 더하기(plus sign)
-순서가 필요한 목록
-순서가 필요한 목록
-순서가 필요하지 않은 목록(서브)
-순서가 필요하지 않은 목록(서브)
-순서가 필요한 목록
-순서가 필요한 목록(서브)
-순서가 필요한 목록(서브)
-순서가 필요한 목록
-순서가 필요하지 않은 목록에 사용 가능한 기호
-대쉬(hyphen)
-별표(asterisks)
-더하기(plus sign)
-링크(Links)
-<a>로 변환됩니다.
-
-[GOOGLE](https://google.com)
-
-[NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
-
-[상대적 참조](../users/login)
-
-[Dribbble][Dribbble link]
-
-[GitHub][1]
-
-문서 안에서 [참조 링크]를 그대로 사용할 수도 있습니다.
-
-다음과 같이 문서 내 일반 URL이나 꺾쇠 괄호(`< >`, Angle Brackets)안의 URL은 자동으로 링크를 사용합니다.
-구글 홈페이지: https://google.com
-네이버 홈페이지: <https://naver.com>
-
-[Dribbble link]: https://dribbble.com
-[1]: https://github.com
-[참조 링크]: https://naver.com "네이버로 이동합니다!"
-GOOGLE
-
-NAVER
-
-상대적 참조
-
-Dribbble
-
-GitHub
-
-문서 안에서 참조 링크를 그대로 사용할 수도 있습니다.
-
-다음과 같이 문서 내 일반 URL이나 꺾쇠 괄호(< >, Angle Brackets)안의 URL은 자동으로 링크를 사용합니다.
-
-구글 홈페이지: https://google.com
-네이버 홈페이지: https://naver.com
-
-이미지(Images)
-<img>로 변환됩니다.
-링크과 비슷하지만 앞에 !가 붙습니다.
-
-![대체 텍스트(alternative text)를 입력하세요!](http://www.gstatic.com/webp/gallery/5.jpg "링크 설명(title)을 작성하세요.")
-
-![Kayak][logo]
-
-[logo]: http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking."
-대체 텍스트(alternative text)를 입력하세요!
-
-Kayak
-
-이미지에 링크
-마크다운 이미지 코드를 링크 코드로 묶어 줍니다.
-
-[![Vue](/images/vue.png)](https://kr.vuejs.org/)
-Vue
-
-코드(Code) 강조
-<pre>, <code>로 변환됩니다.
-숫자 1번 키 왼쪽에 있는 `(Grave)를 입력하세요
-
-인라인(inline) 코드 강조
-`background`혹은 `background-image` 속성으로 요소에 배경 이미지를 삽입할 수 있습니다.
-background혹은 background-image 속성으로 요소에 배경 이미지를 삽입할 수 있습니다.
-
-블록(block) 코드 강조
-`를 3번 이상 입력하고 코드 종류도 적습니다.
-
-
-```html
-<a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
-```
-
-```css
-.list > li {
-  position: absolute;
-  top: 40px;
-}
-```
-
-```javascript
-function func() {
-  var a = 'AAA';
-  return a;
-}
-```
-
-```bash
-$ vim ./~zshrc
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a tag.
-```
-
-<a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
-.list > li {
-  position: absolute;
-  top: 40px;
-}
-function func() {
-  var a = 'AAA';
-  return a;
-}
-$ vim ./~zshrc
-s = "Python syntax highlighting"
-print s
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-표(Table)
-<table> 태그로 변환됩니다.
-헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호가 필요합니다.
-헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용을 정렬할 수 있습니다.
-가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능합니다.
-
-| 값 | 의미 | 기본값 |
-|---|:---:|---:|
-| `static` | 유형(기준) 없음 / 배치 불가능 | `static` |
-| `relative` | 요소 자신을 기준으로 배치 |  |
-| `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  |
-| `fixed` | 브라우저 창을 기준으로 배치 |  |
-
-값 | 의미 | 기본값
----|:---:|---:
-`static` | 유형(기준) 없음 / 배치 불가능 | `static`
-`relative` | 요소 **자신**을 기준으로 배치 |
-`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
-`fixed` | **브라우저 창**을 기준으로 배치 |
-값	의미	기본값
-static	유형(기준) 없음 / 배치 불가능	static
-relative	요소 자신을 기준으로 배치	
-absolute	위치 상 부모(조상)요소를 기준으로 배치	
-fixed	브라우저 창을 기준으로 배치	
-인용문(BlockQuote)
-<blockquote> 태그로 변환됩니다.
-
-인용문(blockQuote)
-
-> 남의 말이나 글에서 직접 또는 간접으로 따온 문장.
-> _(네이버 국어 사전)_
-
-BREAK!
-
-> 인용문을 작성하세요!
->> 중첩된 인용문(nested blockquote)을 만들 수 있습니다.
->>> 중중첩된 인용문 1
->>> 중중첩된 인용문 2
->>> 중중첩된 인용문 3
-인용문(blockQuote)
-
-남의 말이나 글에서 직접 또는 간접으로 따온 문장.
-(네이버 국어 사전)
-
-BREAK!
-
-인용문을 작성하세요!
-
-중첩된 인용문(nested blockquote)을 만들 수 있습니다.
-
-중중첩된 인용문 1
-중중첩된 인용문 2
-중중첩된 인용문 3
-
-원시 HTML(Raw HTML)
-마크다운 문법이 아닌 원시 HTML 문법을 사용할 수 있습니다.
-
-<u>마크다운에서 지원하지 않는 기능</u>을 사용할 때 유용하며 대부분 잘 동작합니다.
-
-<img width="150" src="http://www.gstatic.com/webp/gallery/4.jpg" alt="Prunus" title="A Wild Cherry (Prunus avium) in flower">
-
-![Prunus](http://www.gstatic.com/webp/gallery/4.jpg)
-마크다운에서 지원하지 않는 기능을 사용할 때 유용하며 대부분 잘 동작합니다.
-
-Prunus
-
-Prunus
-
-수평선(Horizontal Rule)
-각 기호를 3개 이상 입력하세요.
-
----
-(Hyphens)
-
-***
-(Asterisks)
-
+1. **[F5] , [Cmd + Shift + D] , [상단바 -> Run -> Start Debugging]** 으로 디버깅 모드 설정
+2. create a launch.json file을 클릭 후 Select Enviroment에서 Node.js를 선택
+3. 파일 생성 이후, 디버깅을 실행
 ___
-(Underscores)
-(Hyphens)
 
-(Asterisks)
+## Breakpoint 란?
+- 디버깅 실행을 일시 중지하는 **중단점**.
+- 중단하고 싶은 해당 줄에서 [F9]으로 설정 가능.
+```
+>Step Over
+- Breakpoint 다음 줄에 나오는 명령을 실행하고 다음 줄로 점프. 
+함수는 이동하지 않고 바로 실행
 
-(Underscores)
+>Step into
+- Breakpoint 다음 줄에 함수 호출이 포함되어 있다면 해당 함수로 점프하고 
+첫 줄에서 멈춤
 
-줄바꿈(Line Breaks)
-동해물과 백두산이 마르고 닳도록 
-하느님이 보우하사 우리나라 만세   <!--띄어쓰기 2번-->
-무궁화 삼천리 화려 강산<br>
-대한 사람 대한으로 길이 보전하세
-동해물과 백두산이 마르고 닳도록
-하느님이 보우하사 우리나라 만세
-무궁화 삼천리 화려 강산
-대한 사람 대한으로 길이 보전하세
+>Step Out
+- 현재 함수의 나머지 부분을 실행한 다음 함수 호출 뒤 다음 명령문에서 일시 중지
+```
+___
 
-일반 줄비꿈이 동작하지 않는 환경(설정 및 버전에 따라)의 경우, ‘2번의 띄어쓰기’나 <br>를 활용할 수 있습니다.
+## Call Stack 이란?
+- 함수의 호출을 기록하는 자료구조. <br>
+기본적으로 우리가 프로그램 안에서 위치한 곳이며, 만약 우리가 어떤 함수를 실행시킨다면, 우리는 스택 위에 무언가를 올리는(push) 행위를 하는 것 <br>
+함수로 부터 반환을 받을 때, 스택의 맨 위를 가져오는(pop) 것 <br>
+현재 어떤 함수가 실행되는지, 함수 안에서도 어떤 함수가 호출되어 있는 지 확인 가능
+___
+
+## Watch 란?
+-원하는 명령어의 결과값을 확인할 수 있음.
+
+```
+Watch 사용법
+- 확인하고 싶은 명령어의 해당 줄에 BreakPoint를 설정
+Run창의 Watch에서 [+] 선택 후 , 확인하고 싶은 명령어를 입력 후 Run.
+```
