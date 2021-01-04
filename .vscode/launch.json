@@ -5,9 +5,36 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "test4",
+            "program": "${workspaceFolder}/test4.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "test3",
+            "program": "${workspaceFolder}/test3.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "test2",
+            "program": "${workspaceFolder}/test2.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "test1",
             "skipFiles": [
                 "<node_internals>/**"
             ],
